@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ODSP AI Journey – Web Presentation</title>
+  <meta name="description" content="A scrolling, website-style presentation for ODSP Vision Day" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%230ea5e9'/><text x='50' y='58' font-family='Arial' font-size='46' text-anchor='middle' fill='white'>AI</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div id="progress"></div>
+
+  <div id="hint">
+    <span class="arrow">↑</span>
+    <span>Use ↑/↓ or scroll</span>
+    <span class="arrow">↓</span>
+  </div>
+
+  <nav id="dots"></nav>
+
+  <main id="viewport" class="viewport">
+    <!-- 1. HERO -->
+    <section class="section hero" data-section="hero">
+      <div class="bg-grid" aria-hidden="true"></div>
+      <div class="container center">
+        <p class="kicker">ODSP Vision Day</p>
+        <h1 class="title">The ODSP <span class="accent">AI Journey</span></h1>
+        <p class="lead">From Cloud to Copilot — and everything in between. This is how we build the next decade of SharePoint &amp; OneDrive.</p>
+        <div class="buttons">
+          <button class="btn primary" data-jump="why">Let’s go</button>
+          <button class="btn ghost" data-jump="cta">Jump to actions</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. WHY -->
+    <section class="section" data-section="why">
+      <div class="container">
+        <div class="header">
+          <p class="kicker">Context</p>
+          <h2>Why this moment matters</h2>
+          <p class="sub">Six tectonic shifts. We’re living through the sixth.</p>
+        </div>
+        <div class="grid six">
+          <div class="card">
+            <div class="icon cyan"></div>
+            <h3>Mainframes</h3>
+            <p class="muted">A foundational shift that set the stage.</p>
+          </div>
+          <div class="card">
+            <div class="icon cyan"></div>
+            <h3>PCs</h3>
+            <p class="muted">A foundational shift that set the stage.</p>
+          </div>
+          <div class="card">
+            <div class="icon cyan"></div>
+            <h3>Internet/Web</h3>
+            <p class="muted">A foundational shift that set the stage.</p>
+          </div>
+          <div class="card">
+            <div class="icon cyan"></div>
+            <h3>Mobile</h3>
+            <p class="muted">A foundational shift that set the stage.</p>
+          </div>
+          <div class="card">
+            <div class="icon cyan"></div>
+            <h3>Cloud</h3>
+            <p class="muted">A foundational shift that set the stage.</p>
+          </div>
+          <div class="card">
+            <div class="icon cyan"></div>
+            <h3>AI</h3>
+            <p class="muted">The era where your code writes code — and occasionally argues with you about style guides.</p>
+          </div>
+        </div>
+        <p class="footnote">PS: AR/VR, we love you — you’re just fashionably late to this slide.</p>
+      </div>
+    </section>
+
+    <!-- 3. NOT NORMAL -->
+    <section class="section" data-section="not-normal">
+      <div class="container">
+        <div class="header">
+          <p class="kicker">Reality Check</p>
+          <h2>AI is not a normal platform shift</h2>
+          <p class="sub">It’s non-deterministic, fast-moving, and wonderfully weird.</p>
+        </div>
+        <div class="grid two">
+          <div class="panel">
+            <h3>Traditional shift</h3>
+            <ul class="bullets">
+              <li>Mostly deterministic math</li>
+              <li>Incremental validation</li>
+              <li>Clear end-user value patterns</li>
+              <li>Predictable competition</li>
+            </ul>
+          </div>
+          <div class="panel accent">
+            <h3>AI shift</h3>
+            <ul class="bullets">
+              <li>Non-stochastic → stochastic mindset</li>
+              <li>Harder to test &amp; validate at scale</li>
+              <li>Requires serious experimentation muscle</li>
+              <li>Search for end-user value in new spaces</li>
+              <li>Incredible competitive velocity (fastest 0→1’s ever)</li>
+              <li>Early days are bumpy — that’s normal</li>
+            </ul>
+          </div>
+        </div>
+        <p class="footnote">Analogy: We went from building trains to <em>training cats</em>. Both move fast — only one ignores your instructions.</p>
+      </div>
+    </section>
+
+    <!-- 4. LEARNED -->
+    <section class="section" data-section="learned">
+      <div class="container">
+        <div class="header">
+          <p class="kicker">Experience</p>
+          <h2>What we’ve learned in the last two years</h2>
+          <p class="sub">Short version: AI is powerful, but honest evals are even more powerful.</p>
+        </div>
+        <div class="grid three">
+          <div class="mini">
+            <div class="mini-icon"></div>
+            <h4>RAG ≠ magic</h4>
+            <p>Retrieval quality is queen; grounding is king. No grounding, no crown.</p>
+          </div>
+          <div class="mini">
+            <div class="mini-icon"></div>
+            <h4>Evals matter</h4>
+            <p>We ship what we measure. Good evals turn opinions into signal.</p>
+          </div>
+          <div class="mini">
+            <div class="mini-icon"></div>
+            <h4>Models have vibes</h4>
+            <p>Genius… and confidently wrong. That’s why safety rails and UX matter.</p>
+          </div>
+          <div class="mini">
+            <div class="mini-icon"></div>
+            <h4>Context is finite</h4>
+            <p>Windows &amp; KV caches are budgets. Spend them like product people.</p>
+          </div>
+          <div class="mini">
+            <div class="mini-icon"></div>
+            <h4>New stacks</h4>
+            <p>Sydney, Flux, Bizchat, semantic search — choose boring when you can, new when you must.</p>
+          </div>
+          <div class="mini">
+            <div class="mini-icon"></div>
+            <h4>Everything is an agent</h4>
+            <p>Copilots everywhere. The trick is orchestration, not sprawl.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. WHERE -->
+    <section class="section" data-section="where">
+      <div class="container">
+        <div class="header">
+          <p class="kicker">Direction</p>
+          <h2>Where we need to go</h2>
+          <p class="sub">High-value customer problems, durable foundations, visible wins.</p>
+        </div>
+        <div class="grid three">
+          <div class="focus">
+            <h3>Front-and-center AI</h3>
+            <ul class="bullets narrow">
+              <li>Ship experiences where AI <em>is</em> the UI</li>
+              <li>Give users autonomy sliders &amp; an Undo button</li>
+              <li>Design for trust, not tricks</li>
+            </ul>
+          </div>
+          <div class="focus">
+            <h3>Better muscle</h3>
+            <ul class="bullets narrow">
+              <li>Mature training &amp; eval approaches</li>
+              <li>Learn from OAI + best-in-class products</li>
+              <li>Understand where models are heading (1, 3, 5 yrs)</li>
+            </ul>
+          </div>
+          <div class="focus">
+            <h3>RAG that sings</h3>
+            <ul class="bullets narrow">
+              <li>Search, content understanding, summarization</li>
+              <li>Data quality &gt; data quantity</li>
+              <li>Ground every claim you can</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. DO JOBS -->
+    <section class="section" data-section="do-jobs">
+      <div class="container">
+        <div class="header">
+          <p class="kicker">Day to Day</p>
+          <h2>Using AI to do our jobs</h2>
+          <p class="sub">Think of AI as a team of tireless, very literal interns.</p>
+        </div>
+        <div class="grid three">
+          <div class="role">
+            <h3>Coding</h3>
+            <ul class="bullets narrow">
+              <li>You’re managing agents, not just code</li>
+              <li>Ask for variants, compare, compose</li>
+              <li>Treat prompts like code: version, review, reuse</li>
+            </ul>
+          </div>
+          <div class="role">
+            <h3>Debugging</h3>
+            <ul class="bullets narrow">
+              <li>Triage with LLMs + traces</li>
+              <li>Generate hypotheses quickly</li>
+              <li>Keep the human-in-the-loop</li>
+            </ul>
+          </div>
+          <div class="role">
+            <h3>PM &amp; UX</h3>
+            <ul class="bullets narrow">
+              <li>Prototype interactions live on real content</li>
+              <li>Eval with real tasks, not vibes</li>
+              <li>Ship narratives, not slide decks (ironic, we know)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. ENABLEMENT -->
+    <section class="section" data-section="enablement">
+      <div class="container">
+        <div class="header">
+          <p class="kicker">Enablement</p>
+          <h2>How we’ll scale this across 2,000 people</h2>
+          <p class="sub">Clear lanes, clear playbooks, clear wins.</p>
+        </div>
+        <div class="grid four">
+          <div class="enable"><h3>Playbooks</h3><p>Golden paths for RAG, evals, prompting, safety, and shipping.</p></div>
+          <div class="enable"><h3>Guilds</h3><p>Communities of practice: applied science, agents, grounding, UX.</p></div>
+          <div class="enable"><h3>Sandboxes</h3><p>Live data, safe guards, repeatable experiments anyone can run.</p></div>
+          <div class="enable"><h3>Metrics</h3><p>North stars tied to customer value, not just latency charts.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Q&A -->
+    <section class="section" data-section="qa">
+      <div class="container center narrow">
+        <div class="header center">
+          <p class="kicker">Intermission</p>
+          <h2>Frequently Blurted Questions</h2>
+          <p class="sub">Because someone was going to ask these anyway.</p>
+        </div>
+        <div class="qa">
+          <div class="qa-item">
+            <p class="q">Is AI going to take my job?</p>
+            <p class="a">No. But the person who learns to wield AI effectively might. Let’s make that person you.</p>
+          </div>
+          <div class="qa-item">
+            <p class="q">What if the model is confidently wrong?</p>
+            <p class="a">Cool, then it’s human. That’s why we ground answers, show citations, and keep Undo close.</p>
+          </div>
+          <div class="qa-item">
+            <p class="q">Can we ship without perfect evals?</p>
+            <p class="a">We can ship without perfect <em>anything</em>. But we can’t improve what we don’t measure.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. CTA -->
+    <section class="section" data-section="cta">
+      <div class="container center narrow">
+        <div class="header center">
+          <p class="kicker">Next 90 Days</p>
+          <h2>We’re not passengers on the AI train — we’re the engineers</h2>
+          <p class="sub">Here’s how to get involved this week.</p>
+        </div>
+        <div class="grid three">
+          <div class="cta"><h3>Join the Guilds</h3><p>Pick a lane: RAG, Agents, Evals, UX. Meet weekly, ship monthly.</p><button class="btn small" data-link="#">See guild calendar</button></div>
+          <div class="cta"><h3>Run a Playbook</h3><p>Grab a golden path and ship a measurable win in 2 weeks.</p><button class="btn small" data-link="#">Open playbooks</button></div>
+          <div class="cta"><h3>Demo Friday</h3><p>Show a 5‑min demo. Win internet points and actual ones.</p><button class="btn small" data-link="#">Submit a demo</button></div>
+        </div>
+        <div class="buttons">
+          <button class="btn primary" data-jump="hero">Back to start</button>
+          <button class="btn ghost" data-link="#">Resources</button>
+        </div>
+        <p class="tiny">Pro tip: present full‑screen in a modern browser. ↑/↓ to navigate.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
